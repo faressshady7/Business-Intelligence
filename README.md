@@ -4,31 +4,6 @@ This repository contains an end-to-end Enterprise Data Warehouse (EDW) implement
 
 ---
 
-## Architecture Overview
-
-+----------------------------------+
-           |  OLTP Source System (Operational)|
-           +----------------------------------+
-                            |
-                            v
-           +----------------------------------+
-           |   Bronze Schema (Raw Ingestion)  |
-           +----------------------------------+
-                            |
-                            v
-           +----------------------------------+
-           | Silver Schema (Clean & Standard) |
-           +----------------------------------+
-                            |
-                            v
-           +----------------------------------+
-           | Gold Schema (Galaxy Star Schema) |
-           +----------------------------------+
-                            |
-                            v
-           +----------------------------------+
-           |    Power BI Reporting Layer      |
-           +----------------------------------+
 
 ### 1. Source / Bronze Layer (Raw Landing)
 * **Purpose**: Serves as the initial landing zone for raw operational data extracted directly from the OLTP source.
